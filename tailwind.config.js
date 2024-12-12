@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+    require('flowbite/plugin') 
+  ],
   daisyui: {
     themes: ["light"], // Only include the light theme
   },
