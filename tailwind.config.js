@@ -1,12 +1,15 @@
-import daisyui from "daisyui"
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',           // For HTML files
+    './src/**/*.{js,jsx,ts,tsx}',  // For JS/JSX/TS/TSX files
+    './node_modules/flowbite/**/*.js',
   ],
   theme: {
     extend: {},
   },
-  plugins: [daisyui,],
-}
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["light"], // Only include the light theme
+  },
+};
