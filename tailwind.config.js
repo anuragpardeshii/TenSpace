@@ -1,5 +1,8 @@
+import daisyui from 'daisyui';
+import flowbite from 'flowbite/plugin';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     './index.html',           // For HTML files
     './src/**/*.{js,jsx,ts,tsx}',  // For JS/JSX/TS/TSX files
@@ -8,10 +11,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('daisyui'),
-    require('flowbite/plugin') 
-  ],
+  plugins: [daisyui, flowbite],
   daisyui: {
     themes: ["light"], // Only include the light theme
   },
