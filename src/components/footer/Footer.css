@@ -1,0 +1,10 @@
+@media (max-width:415px) {
+  .small-center {
+    text-align: center;
+    justify-content: center;
+  }
+  .small-center-justify {
+    justify-content: center;
+  }
+}
+
